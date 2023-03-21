@@ -37,12 +37,14 @@ function Slider() {
           <p className={cb("item-desc")}>{text3}</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={14000} className={cb("item")}>
+      <Carousel.Item interval={11000} className={cb("item")}>
         <video
           className={cb("item-img")}
           controls
           src={video}
           alt="Third slide"
+          muted
+          autoPlay
         />
         <Carousel.Caption className={cb("overlay")}>
           <h3>Hơ!?</h3>
