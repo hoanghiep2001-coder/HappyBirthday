@@ -1,0 +1,87 @@
+.item {
+  visibility: hidden;
+}
+
+.text {
+  padding: 4px 8px;
+  background-color: pink;
+  border-radius: 8px;
+  color: white;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+@keyframes hidden {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+
+@keyframes toRight {
+  from {
+    transform: translateX(-40px);
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+    transform: translateX(0px);
+  }
+}
+
+.item-1 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 2s;
+}
+
+.item-2 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 5s;
+}
+
+.item-3 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 8s;
+}
+
+.item-4 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 11s;
+}
+
+.item-5 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 14s;
+}
+
+.item-6 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 17s;
+}
+
+.item-7 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 20s;
+}
+
+.item-8 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 23s;
+}
+
+.item-9 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 26s;
+}
+
+.item-10 {
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 3s;
+  .text {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+  }
+}

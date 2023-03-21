@@ -4,13 +4,16 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyles from "./components/GlobalStyles";
+import ContextProvider from "./components/Layout/Context/ContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <GlobalStyles>
-      <App />
-    </GlobalStyles>
+    <ContextProvider>
+      <GlobalStyles>
+        <App />
+      </GlobalStyles>
+    </ContextProvider>
   </React.StrictMode>
 );
 

@@ -1,15 +1,17 @@
 import classNames from "classnames/bind";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import styles from "./Content.module.scss";
 import music1 from "../../../assets/audio/DauAiDamHua.mp3";
 import music2 from "../../../assets/audio/MatMoc.mp3";
 import AudioControl from "../AudioControl";
 import Slider from "../Slider";
 import Message from "../Message";
+import { Context } from "../Context/Context";
 const cb = classNames.bind(styles);
 
 function Content() {
-  const [song, setSong] = useState(music1);
+  const context = useContext(Context);
+  const [song, setSong] = useState(music2);
   const [slider, setSlider] = useState(true);
   const audioRef = useRef(null);
   const [title, setTitle] = useState(
@@ -29,7 +31,7 @@ function Content() {
   }, []);
 
   const handleNextScene = (e) => {
-    setSong(music2);
+    setSong(music1);
     setTimeout(() => {
       audioRef.current.play();
     }, 100);
@@ -52,7 +54,15 @@ function Content() {
       <div className={cb("inner")}>
         <AudioControl control={handleControlAudio} />
         <audio className={cb("audio")} src={song} ref={audioRef}></audio>
-        <h3 className={cb("title", titleAnim ? "toLeft" : "")}>{title}</h3>
+        <h3
+          className={cb(
+            "title",
+            titleAnim ? "toLeft" : "",
+            context.hideTitle ? "hideTitle" : ""
+          )}
+        >
+          {title}
+        </h3>
         {slider ? <Slider /> : <Message />}
         <button
           type="button"

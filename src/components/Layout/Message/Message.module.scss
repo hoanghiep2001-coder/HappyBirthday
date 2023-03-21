@@ -1,0 +1,28 @@
+.inner {
+  position: relative;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-finish {
+  position: absolute;
+  top: 20%;
+}
+
+.doneMess {
+  animation: doneMess 0.6s ease-out forwards;
+}
+
+@keyframes doneMess {
+  from {
+    opacity: 1;
+    display: flex;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}

@@ -7,6 +7,11 @@
   padding: 12px;
   height: 100%;
   text-align: center;
+  overflow: hidden auto;
+}
+
+.inner::-webkit-scrollbar {
+  display: none;
 }
 
 .title {
@@ -44,4 +49,8 @@
     transform: translateX(-100px);
     opacity: 0;
   }
+}
+
+.hideTitle {
+  display: none;
 }
