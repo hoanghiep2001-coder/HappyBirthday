@@ -13,21 +13,21 @@ function Slider() {
 
   return (
     <Carousel fade={true} as={"section"} className={cb("slider")} slide={false}>
-      <Carousel.Item interval={5000} className={cb("item")}>
+      <Carousel.Item interval={8000} className={cb("item")}>
         <img className={cb("item-img")} src={slide1} alt="First slide" />
         <Carousel.Caption>
           <h3>Cấp 3!?</h3>
           <p className={cb("item-desc")}>{text1}</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={5000} className={cb("item")}>
+      <Carousel.Item interval={8000} className={cb("item")}>
         <img className={cb("item-img")} src={slide2} alt="Second slide" />
         <Carousel.Caption>
           <h3>Kỷ yếu ❤️!?</h3>
           <p className={cb("item-desc")}>{text2}</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={5000} className={cb("item")}>
+      <Carousel.Item interval={8000} className={cb("item")}>
         <img className={cb("item-img")} src={slide3} alt="Third slide" />
         <Carousel.Caption>
           <h3>Đại học!?</h3>

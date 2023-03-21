@@ -16,6 +16,20 @@
 
 .title {
   margin-bottom: 12px;
+  animation: toRight 0.6s ease-out forwards;
+  visibility: hidden;
+  animation-delay: 2s;
+}
+
+@keyframes toRight {
+  from {
+    transform: translateX(-40px);
+    visibility: hidden;
+  }
+  to {
+    transform: translateX(0);
+    visibility: visible;
+  }
 }
 
 .next-scene {
@@ -30,6 +44,9 @@
   display: inline-block;
   margin-top: 20px;
   opacity: 0.4;
+  visibility: hidden;
+  animation: toRight 0.6s ease-out forwards;
+  animation-delay: 12s;
 }
 
 .none {
@@ -44,10 +61,12 @@
   from {
     transform: translateX(0);
     opacity: 1;
+    visibility: visible;
   }
   to {
     transform: translateX(-100px);
     opacity: 0;
+    visibility: visible;
   }
 }
 

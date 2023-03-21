@@ -1,3 +1,20 @@
+.slider {
+  animation: toRight 0.6s ease-out forwards;
+  visibility: hidden;
+  animation-delay: 5s;
+}
+
+@keyframes toRight {
+  from {
+    transform: translateX(-40px);
+    visibility: hidden;
+  }
+  to {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
 .item {
   height: 0;
   padding-bottom: 100%;

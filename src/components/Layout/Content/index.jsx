@@ -9,7 +9,7 @@ import Message from "../Message";
 import { Context } from "../Context/Context";
 const cb = classNames.bind(styles);
 
-function Content() {
+function Content({ playSong }) {
   const context = useContext(Context);
   const [song, setSong] = useState(music2);
   const [slider, setSlider] = useState(true);
@@ -24,6 +24,10 @@ function Content() {
   useEffect(() => {
     const audio = audioRef.current;
     audio.volume = 0.7;
+
+    if (playSong) {
+      audio.play();
+    }
 
     audio.onended = () => {
       audio.play();
