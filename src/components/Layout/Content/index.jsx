@@ -2,7 +2,7 @@ import classNames from "classnames/bind";
 import { useState, useEffect, useRef, useContext } from "react";
 import styles from "./Content.module.scss";
 import music1 from "../../../assets/audio/DauAiDamHua.mp3";
-import music2 from "../../../assets/audio/MatMoc.mp3";
+import music2 from "../../../assets/audio/DenDaKhongDuong.mp3";
 import AudioControl from "../AudioControl";
 import Slider from "../Slider";
 import Message from "../Message";
