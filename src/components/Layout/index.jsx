@@ -17,7 +17,7 @@ function Layout() {
               }
             : {}
         }
-        className={cb("inner")}
+        className={cb("inner", context.background ? "fade" : "")}
       >
         <Content />
       </div>

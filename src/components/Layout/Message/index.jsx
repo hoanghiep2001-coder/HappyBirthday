@@ -14,7 +14,7 @@ function Message() {
       setIsShow(true);
       context.handleSetHideTitle();
       context.handleSetBackground();
-    }, 35000);
+    }, 45000);
   }, []);
 
   return (
@@ -27,7 +27,9 @@ function Message() {
           />
           <MessageItem
             itemIndex={"item-2"}
-            message={"Anh làm cái này tặng em nhân ngày đánh dấu cột mốc"}
+            message={
+              "Anh làm cái này tặng em nhân ngày đánh dấu cột mốc tuổi 20"
+            }
           />
           <MessageItem
             itemIndex={"item-3"}
@@ -61,11 +63,15 @@ function Message() {
               "Happy Birthdayyy! Chúc bé 1 ngày sinh nhật trọn vẹn và ý nghĩa nhee! ❤️❤️❤️❤️🍰🎂"
             }
           />
+          <MessageItem
+            itemIndex={"item-10"}
+            message={"Mà không có bánh đâu cố chịu nhee 😂😂"}
+          />
         </div>
         {isShow ? (
           <div className={cb("message-finish")}>
             <MessageItem
-              itemIndex={"item-10"}
+              itemIndex={"item-11"}
               message={"Chúc Em Sinh Nhật Vui Vẻ! Happy BirthDayy 🥳🥳❤️"}
             />
           </div>
