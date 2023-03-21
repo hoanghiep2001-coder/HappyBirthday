@@ -7,7 +7,7 @@ function AudioControl({ control }) {
   const [request, setRequest] = useState("Nghe Nhạc Khum?");
   const continueSound = "Okii!";
   const noSound = "Khum :)";
-  const hint = "Chạm vào đâyy!! --->>";
+  const hint = "Chạm vào đâyy!! 👉";
 
   const [isShow, setIsShow] = useState(false);
 

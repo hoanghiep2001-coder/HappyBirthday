@@ -1,0 +1,16 @@
+.item {
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item-img {
+  height: 390px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-desc {
+  font-size: 12px;
+}

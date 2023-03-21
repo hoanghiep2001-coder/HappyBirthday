@@ -6,7 +6,7 @@ const cb = classnames.bind(styles);
 function Layout() {
   return (
     <div className={cb("wrapper")}>
-      <div className={cb("inner", "container")}>
+      <div className={cb("inner")}>
         <Content />
       </div>
     </div>
