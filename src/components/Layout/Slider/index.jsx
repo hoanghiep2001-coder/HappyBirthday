@@ -45,6 +45,7 @@ function Slider() {
           alt="Third slide"
           muted
           autoPlay
+          loop
         />
         <Carousel.Caption className={cb("overlay")}>
           <h3>Hơ!?</h3>
