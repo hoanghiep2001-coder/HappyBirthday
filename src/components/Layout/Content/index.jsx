@@ -23,7 +23,7 @@ function Content() {
 
   useEffect(() => {
     const audio = audioRef.current;
-    audio.volume = 0.5;
+    audio.volume = 0.7;
 
     audio.onended = () => {
       audio.play();
