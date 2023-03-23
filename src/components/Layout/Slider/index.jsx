@@ -15,7 +15,7 @@ function Slider() {
   const text4 = "Hôm tân gia này 😂😂";
   const text5 = "Chỉ nhớ hôm đấy em khá là xinh 😂😂";
   return (
-    <Carousel className={cb("slider")}>
+    <Carousel className={cb("slider")} fade>
       <Carousel.Item interval={8000} className={cb("item")}>
         <img className={cb("item-img")} src={slide1} alt="First slide" />
         <Carousel.Caption className={cb("overlay")}>
