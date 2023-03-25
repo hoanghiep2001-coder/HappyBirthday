@@ -5,6 +5,8 @@ import slide1 from "../../../assets/img/Em/slide1.jpg";
 import slide2 from "../../../assets/img/Em/slide2.jpg";
 import slide3 from "../../../assets/img/Em/slide3.jpg";
 import slide4 from "../../../assets/img/Em/slide4.jpg";
+import slide5 from "../../../assets/img/Em/slide5.jpg";
+
 import video from "../../../assets/img/Em/video/clip.mp4";
 const cb = classNames.bind(styles);
 
@@ -14,6 +16,7 @@ function Slider() {
   const text3 = "Đợt này hình như gặp anh rồi đấy 😂😂";
   const text4 = "Hôm tân gia này 😂😂";
   const text5 = "Chỉ nhớ hôm đấy em khá là xinh 😂😂";
+  const text6 = "=)) Anh Mới săn sale đc tấm Tam Chúc này 😂😂";
   return (
     <Carousel className={cb("slider")} fade>
       <Carousel.Item interval={8000} className={cb("item")}>
@@ -57,6 +60,13 @@ function Slider() {
         <Carousel.Caption className={cb("overlay")}>
           <h3 className={cb("cenema")}>Hôm trước này!?</h3>
           <p className={cb("item-desc", "cenema")}>{text5}</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={8000} className={cb("item")}>
+        <img className={cb("item-img")} src={slide5} alt="Third slide" />
+        <Carousel.Caption className={cb("overlay")}>
+          <h3 className={cb("cenema")}>Ồ!?</h3>
+          <p className={cb("item-desc", "cenema")}>{text6}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
